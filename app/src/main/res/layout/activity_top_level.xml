@@ -7,6 +7,7 @@
         android:orientation="vertical"
         tools:context="com.example.use.starbuzz.TopLevelActivity">
     <ImageView
+            android:id="@+id/image_view"
             android:layout_width="200dp"
             android:layout_height="100dp"
             android:src="@drawable/starbuzz_logo"
@@ -14,7 +15,7 @@
     <ListView
             android:id="@+id/list_options"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:entries="@array/options"
-    />
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_view"
+            android:entries="@array/options"/>
 </RelativeLayout>
